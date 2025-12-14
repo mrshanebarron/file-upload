@@ -1,0 +1,12 @@
+{
+    "name": "@laraveldesign/file-upload",
+    "version": "1.0.0",
+    "description": "Drag and drop file upload component for Laravel",
+    "main": "resources/js/vue/index.js",
+    "module": "resources/js/vue/index.js",
+    "files": ["resources/js/vue"],
+    "keywords": ["laravel", "file", "upload", "dropzone", "livewire", "vue"],
+    "author": "Shane Barron <mrshanebarron@gmail.com>",
+    "license": "MIT",
+    "peerDependencies": {"vue": "^3.0.0"}
+}
