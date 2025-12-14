@@ -13,6 +13,6 @@ class file-upload extends Component
 
     public function render()
     {
-        return view('ld-file-upload::components.file-upload');
+        return view('sb-file-upload::components.file-upload');
     }
 }

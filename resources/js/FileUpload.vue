@@ -44,7 +44,7 @@
 import { ref } from 'vue';
 
 export default {
-  name: 'LdFileUpload',
+  name: 'SbFileUpload',
   props: {
     modelValue: { type: Array, default: () => [] },
     multiple: { type: Boolean, default: true },

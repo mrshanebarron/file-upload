@@ -1,5 +1,5 @@
 <?php
 
 return [
-    // Default settings for ld-file-upload
+    // Default settings for sb-file-upload
 ];
