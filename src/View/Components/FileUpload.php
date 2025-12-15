@@ -1,10 +1,10 @@
 <?php
 
-namespace MrShaneBarron\file-upload\View\Components;
+namespace MrShaneBarron\FileUpload\View\Components;
 
 use Illuminate\View\Component;
 
-class file-upload extends Component
+class FileUpload extends Component
 {
     public function __construct()
     {

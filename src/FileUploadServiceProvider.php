@@ -4,8 +4,7 @@ namespace MrShaneBarron\FileUpload;
 
 use Illuminate\Support\ServiceProvider;
 use MrShaneBarron\FileUpload\Livewire\FileUpload;
-use MrShaneBarron\FileUpload\View\Components\file-upload as BladeFileUpload;
-use Livewire\Livewire;
+use MrShaneBarron\FileUpload\View\Components\FileUpload as BladeFileUpload;
 
 class FileUploadServiceProvider extends ServiceProvider
 {
@@ -18,7 +17,9 @@ class FileUploadServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sb-file-upload');
 
-        Livewire::component('sb-file-upload', file-upload::class);
+        if (class_exists(\Livewire\Livewire::class)) {
+            \Livewire\Livewire::component('sb-file-upload', FileUpload::class);
+        }
 
         $this->loadViewComponentsAs('ld', [
             BladeFileUpload::class,
